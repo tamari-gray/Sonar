@@ -12,6 +12,6 @@
   <title>sign up</title>
 </svelte:head>
 
-<h1>Sign up</h1>
+<h1>Create an account</h1>
 
 <SignUp />

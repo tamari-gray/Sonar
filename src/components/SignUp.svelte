@@ -1,13 +1,8 @@
 <script>
-  let authType = "sign up";
-
   let userName = "";
-  let email = "";
   let password = "";
+  let email = "";
 
-  function handleAuthType(type) {
-    authType = type;
-  }
   function handleSubmit(e) {
     e.preventDefault();
     // firebase auth function
@@ -18,26 +13,28 @@
   form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-content: center;
     height: 50vh;
     width: 50vw;
     border: thin solid grey;
     margin: auto;
   }
-  h1 {
+  p {
     text-align: center;
   }
-  p{text-align: center}
   label {
     text-align: left;
   }
   div {
+    width: 100%;
     margin: 1em;
+    display: flex;
+    justify-content: space-around;
   }
+  div label {margin-right: 1em}
 </style>
 
-<form onsubmit="handleSubmit">
+<form onsubmit={handleSubmit}>
   <div>
     <label for="userName">User name:</label>
     <input type="text" name="userName" bind:value={userName} />
@@ -50,9 +47,12 @@
     <label for="password">Password:</label>
     <input type="password" name="password" bind:value={password} />
   </div>
+  <div>
+    <button type="submit">Sign up</button>
+  </div>
 </form>
 
 <p>
-  already have an account? Login <a href="login">here</a>
+  already have an account? Login
+  <a href="login">here</a>
 </p>
-
