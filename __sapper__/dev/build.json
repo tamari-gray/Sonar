@@ -2,20 +2,26 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.e0486712.js"
+    "main": "client.7f02c6c9.js"
   },
   "css": {
     "main": "main.850609924.css",
     "chunks": {
       "index.svelte": [
-        "index.21cbaaed.css"
+        "index.b3ceb5de.css"
+      ],
+      "signUp.svelte": [
+        "signUp.326ab130.css"
       ],
       "about.svelte": [],
+      "login.svelte": [
+        "login.937212e2.css"
+      ],
       "blog/index.svelte": [
-        "index.469b195b.css"
+        "index.6733f90c.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].f2a393a5.css"
+        "[slug].69051677.css"
       ]
     }
   }
