@@ -3,8 +3,9 @@
   let password = "";
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
     // firebase auth function
+    
   }
 </script>
 
